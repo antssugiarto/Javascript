@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 5px;
+    width: 600px;
+    box-sizing: content-box;
+    background-color: white;
+}
+
+.c-thumb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.c-thumb img {
+    width: 196.5px;
+    transition: .2s;
+}
+
+.c-thumb img:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn .5s forwards;
+}
+
+.active {
+    opacity: .6;
+}
+
